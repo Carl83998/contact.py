@@ -2,13 +2,17 @@ from contact import *
 print("*** CONTACT BOOK ****")
 print()
 def main():
+# get user choice
     contact_book = ContactBook()
+#invocation of the menu 
     while True:
+# display menu
         print("1. Add contact")
         print("2. View contacts")
         print("3. Update contact")
         print("4. Delete contact")
         print("5. Quit")
+# accepting user option 
         choice = input("Choose an option: ")
         if choice == "1":
             contact_book.add_contact()

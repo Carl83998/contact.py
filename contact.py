@@ -8,7 +8,7 @@ class Contact:
 class ContactBook:
     def __init__(self):
         self.contacts = []
-
+# Display the menu function
     def add_contact(self):
         name = input("Enter name: ")
         phone_number = input("Enter phone number: ")
@@ -23,6 +23,7 @@ class ContactBook:
             print(f"{i}. {contact.name} - {contact.phone_number} - {contact.email} - {contact.address}")
 
     def update_contact(self):
+    #display current task
         self.view_contacts()
         contact_number = int(input("Enter the contact number to update: "))
         if 1 <= contact_number <= len(self.contacts):
